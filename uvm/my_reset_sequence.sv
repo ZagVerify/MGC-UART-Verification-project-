@@ -30,8 +30,8 @@ class my_reset_sequence extends uvm_sequence #(my_reset_sequence_item);
             my_sequence_item reset_item = my_sequence_item::type_id::create("reset_item");
             start_item(reset_item);
             reset_item.presetn = 0;
-            reset_item.sel = 0;
-            reset_item.enable = 0;
+            reset_item.psel = 0;
+            reset_item.penable = 0;
 
             `uvm_info("SEQ", $sformatf("Generate new item: %s", reset_item.convert2string()), UVM_HIGH)
 
