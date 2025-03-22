@@ -17,7 +17,7 @@
 */
 class my_sequence_item extends uvm_sequence_item;
 
-    `uvm_object_utils(main_sequence_item)
+    `uvm_object_utils(my_sequence_item)
 
     rand  bit        presetn;
     randc bit [31:0] paddr;
